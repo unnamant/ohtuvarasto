@@ -1,7 +1,7 @@
 from varasto import Varasto
 
 
-def main():
+def main(): # pylint: disable=too-many-statements
     mehua = Varasto(100.0)
     olutta = Varasto(100.0, 20.2)
 
@@ -52,7 +52,6 @@ def main():
     saatiin = mehua.ota_varastosta(-32.9)
     print(f"saatiin {saatiin}")
     print(f"Mehuvarasto: {mehua}")
-
 
 if __name__ == "__main__":
     main()
